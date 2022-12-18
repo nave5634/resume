@@ -1,0 +1,171 @@
+  /* font-family: 'Montserrat',sans-serif;
+  font-family: 'Noto Sans KR',sans-serif;
+  font-family: 'Nanum Myeongjo',serif;
+  font-family: 'Montserrat',sans-serif;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
+  1e4c84
+  */
+
+
+
+  body,
+  html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Do Hyeon', sans-serif;
+    
+  }
+
+  main{
+    width: 1100px;
+    margin: 100px auto;
+    background: #FFF;
+    border: 1px solid #396CED;
+    box-shadow: 15px 15px 1px #012170;
+    
+  }
+
+  .profile h1{ 
+    position: relative;   
+    text-align: center; 
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 2px 2px 1px  rgb(55, 66, 230);   
+  }
+  .profile h1 span{
+    position: absolute;
+    left: calc(50% - 300px);
+    width: 600px;
+    display: block; 
+    margin-top: 50px;
+    background: #396CED;
+    padding: 5px 0;
+  }
+  .profile .prf-img{
+    
+    position: relative;
+    text-align: center;
+    top: 170px;
+    
+  }
+  .profile .prf-img img{  
+    width: 200px; 
+  margin: 0 auto;
+  border: 1px dotted #666;
+
+  }
+  .infomation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+  }
+
+  li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 1px solid #0120702a; 
+    box-sizing: border-box; 
+  }
+  .infomation b{
+    font-size: 18px;
+    font-style: normal;  
+    margin-top: 10px;
+    color: rgba(0, 51, 99, 0.774);
+    font-family: 'Montserrat',sans-serif;
+  }
+  .infomation em,
+  .infomation i{
+    font-weight: 500;
+    font-family: 'Do Hyeon', sans-serif;
+    font-style: normal;
+    font-size: 18px;  
+    margin: 5px 10px;
+    color: rgb(0, 51, 99,0.5);
+  }
+  .about{
+    border: none;
+  }
+
+  .project h2{
+    width: 600px;
+    margin: 0 auto;
+    font-style: normal;
+    padding: 10px 10px;
+    color:#FFF;
+    font-size: 30px;
+    text-align: center;
+    background: #396CED;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px  rgb(55, 66, 230);  
+  }
+  .project figure img{
+    display: block;
+    margin: 0 auto;
+  }
+  .skills em i::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    margin-right: 5px;
+  }
+  .project a{
+    text-decoration: none;
+    
+  }
+button{
+  display: inline;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: 20px calc(50% - 100PX);
+  font-size: 25px;  
+  background: #396CED;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 900;
+  color: white;
+  box-shadow: 10px 10px 2px rgba(35, 167, 255, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255,255,255,0.7);
+    color: #396CED;
+    border: 1px solid rgb(55, 66, 230, 0.5); ;
+}
+.project figure figcaption{
+  width: 75%;  
+  margin: 0 auto;
+}
+.project figure figcaption dl{
+  display: flex; 
+  flex-wrap: wrap;  
+  font-style: normal;
+  font-size: 16px;
+  font-family: 'Montserrat',sans-serif;
+  border-top: 1px solid #EEE;
+  color: rgba(0, 51, 99, 0.774);
+  font-weight: 500;
+}
+.project figure figcaption dl dt{
+  width: 20%;
+  margin: 10px 0;
+  text-align: center;
+  
+}
+.project figure figcaption dl dd{
+  margin: 10px 30px;
+  width: 70%;
+  
+} 
