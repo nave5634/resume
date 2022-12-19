@@ -20,9 +20,10 @@
 }
 
 body {
-  background-image: url("../img/background/background.webp");
+  background-image: url("../img/background/background.webp");  
   background-size: cover;
   background-repeat: no-repeat;
+ 
   @media screen and (max-width: 1000px) {
     background-image: url("../img/background/background3.png");
     background-attachment: fixed;
@@ -30,7 +31,6 @@ body {
 }
 main {
   background: none;
-
   font-family: "NanumSquareNeo-Variable";
   width: 100%;
   height: 100%;
@@ -44,47 +44,44 @@ main {
   font-size: 16px;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
-    
     background: none;
     border: none;
-   
   }
-
-  section.left {
+  section.left {     
+    
     width: 30%;
     border-right: 1px solid #73c0c7;
     box-sizing: border-box;
     @media screen and (max-width: 1000px) {
       display: block;
+      background: none;
       width: 100%;
+      max-width: 600;
       margin: 0 auto;
       border-right: none;
-
-      
     }
     div.picture {
       margin-top: 30px;
       text-align: center;
-      h2,h3{
+      h2,
+      h3 {
         color: #444;
         font-family: "Pretendard-Regular";
         letter-spacing: 3px;
       }
       h2 {
-        letter-spacing: 5px;      
+        letter-spacing: 5px;
         font-size: 2em;
-        font-weight: 900;     
+        font-weight: 900;
         @media screen and (max-width: 1000px) {
           margin: 0 auto;
           font-size: 2em;
         }
       } //h2
-      h3 {      
+      h3 {
         margin: 10px 0;
-        text-transform: uppercase;
+     
         font-size: 1.5em;
-        
-
       } //h3
       figure {
         width: 200px;
@@ -100,16 +97,15 @@ main {
           width: 100%;
           height: 100%;
           object-fit: cover;
+      
         } //img
       } //figure
     } //div picture
     div.about {
-     
       b.title {
         @include title;
         text-align: center;
         @media screen and (max-width: 1000px) {
-         
         }
       } //b.title
     } //about
@@ -124,10 +120,9 @@ main {
         width: 100%;
         margin-bottom: 15px;
         font-size: 14px;
-
       }
     } //about_p
-    b.title-sm{
+    b.title-sm {
       font-family: "Pretendard-Regular";
       color: #253b30;
       display: block;
@@ -135,10 +130,10 @@ main {
       font-weight: 700;
       font-size: 20px;
       text-align: center;
-      @media screen and (min-width: 1000px){
+      @media screen and (min-width: 1000px) {
         display: none;
       }
-    }//about_b
+    } //about_b
     div.contact {
       margin-top: 10px;
 
@@ -150,7 +145,7 @@ main {
         }
       } //b.title
 
-      address{
+      address {
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 1000px) {
@@ -159,29 +154,28 @@ main {
           justify-content: center;
           align-items: center;
         }
-        b {
-          color: #76ba99;
-        
-          @media screen and (max-width: 1000px) {
-           
-            margin: 0px 5px;
-            color: #96735b;
-          }
-        } //b
-        em {
-          margin-bottom: 5px;
-          width: 100%;
-          font-style: normal;
-          text-align: center;
-          font-family: "Pretendard-Regular";
-          color: #666;
-          @media screen and (max-width: 1000px) {
+        p {
+          b {
+            color: #76ba99;                 
+            @media screen and (max-width: 1000px) {
+              margin: 0px 5px;
+              color: #96735b;
+            }//b sm
+          } //b
+          em {           
             width: 100%;
-            margin-bottom: 10px;
-            font-size: 14px;
-          } //sm
-        } //em
-      } //p
+            font-style: normal;
+            text-align: center;           
+            color: #666;
+            font-family: "Pretendard-Regular";
+            @media screen and (max-width: 1000px) {
+              width: 100%;
+              margin-bottom: 10px;
+              font-size: 14px;
+            } //em sm
+          } //em
+        } //p
+      } //address
     } //contact
     div.edu {
       margin-top: 10px;
@@ -198,17 +192,15 @@ main {
       } //b.title
       p {
         display: flex;
-        flex-direction: row;
+        
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
+     
         b.b4 {
           margin: 0 auto;
           font-size: 1.5em;
           color: #76ba99;
-          @media screen and (max-width: 1000px){
-             color: #96735b;
+          @media screen and (max-width: 1000px) {
+            color: #96735b;
           }
         } //b4
         em {
@@ -231,11 +223,10 @@ main {
         @include title;
         margin-top: 10px;
         text-align: center;
-        @media screen and (max-width: 1000px) {          
-          
+        @media screen and (max-width: 1000px) {
         }
       } //b.title
- 
+
       div.skill-img {
         margin-top: 10px;
         ul {
@@ -255,7 +246,7 @@ main {
             width: 20%;
             text-align: center;
             @media screen and (max-width: 1000px) {
-              width: 15% ;
+              width: 15%;
               max-width: 300px;
             }
             img {
@@ -263,12 +254,12 @@ main {
               width: 30px;
               height: 30px;
               @media screen and (max-width: 1000px) {
-                margin-bottom: 5px;                
+                margin-bottom: 5px;
                 width: 30px;
                 height: 30px;
               }
             } //img
-            i{
+            i {
               font-size: 14px;
             }
             i {
@@ -283,7 +274,6 @@ main {
     } //skills
   } //left
   section.right {
-    
     flex: 1;
     @media screen and (max-width: 1000px) {
       display: block;
@@ -295,10 +285,8 @@ main {
         @include title;
         margin-top: 30px;
         text-align: center;
-        
       } //b.title
       picture {
-       
         img {
           max-width: 600px;
           margin: 20px auto;
@@ -317,30 +305,28 @@ main {
         text-align: center;
         line-height: 40px;
         text-transform: uppercase;
-        color: #73c0c7;      
-        border: 1px solid #73c0c7; 
+        color: #73c0c7;
+        border: 1px solid #73c0c7;
         font-weight: 900;
         text-decoration: none;
         font-family: "S-CoreDream-3Light";
-        margin-bottom: 20px;   
-        box-sizing: border-box;     
+        margin-bottom: 20px;
+        box-sizing: border-box;
         letter-spacing: 5px;
-        transition: all 0.3s;         
+        transition: all 0.3s;
         &:hover {
-          background: #73c0c7; 
-          color: #EEE; 
+          background: #73c0c7;
+          color: #eee;
           border: none;
-          @media screen and (max-width: 1000px){           
+          @media screen and (max-width: 1000px) {
             background: #9e7676;
           }
         }
         @media screen and (max-width: 1000px) {
-          background:none ;
-          
+          background: none;
+
           border: 1px solid #9e7676;
           color: #9e7676;
-          
-         
         }
       } //a
       h3 {
@@ -362,13 +348,12 @@ main {
             max-width: 400px;
             padding: 10px 5px;
             border-top: 0;
-            
           }
 
           dt {
             text-align: center;
             width: 20%;
-            margin-top: 15px;
+            margin-top: 10px;
             font-family: "S-CoreDream-3Light";
             font-weight: 700;
             font-size: 16px;
@@ -382,15 +367,14 @@ main {
           } //dt
           dd {
             font-family: "S-CoreDream-3Light";
-            width: 70%;
-            margin-top: 15px;
+            width: 70%;           
             font-size: 16px;
             color: #666;
+            margin-top: 10px;
             @media screen and (max-width: 1000px) {
               width: 70%;
               margin-left: 10px;
               font-size: 14px;
-          
             }
           } //dd
         } //dl
