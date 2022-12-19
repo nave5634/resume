@@ -150,7 +150,7 @@ main {
         }
       } //b.title
 
-      p {
+      address{
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 1000px) {
@@ -161,22 +161,10 @@ main {
         }
         b {
           color: #76ba99;
-          position: relative;
-          left: 20px;
-          font-size: 1.3em;
-          width: 10%;
-          &.b1 {
-            top: 25px;
-          }
-          &.b2 {
-            top: 25px;
-          }
-          &.b3 {
-            top: 27px;
-          }
+        
           @media screen and (max-width: 1000px) {
-            position: static;
-            margin: 2px 0;
+           
+            margin: 0px 5px;
             color: #96735b;
           }
         } //b
