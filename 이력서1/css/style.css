@@ -1,0 +1,541 @@
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url("../img/background/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url("../img/background/background3.png");
+    background-attachment: fixed;
+  }
+}
+
+main {
+  background: none;
+  font-family: "NanumSquareNeo-Variable";
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  border-left: 1px solid #73c0c7;
+  border-right: 1px solid #73c0c7;
+  color: #474747;
+  font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    background: none;
+    border: none;
+  }
+}
+main section.left {
+  width: 30%;
+  border-right: 1px solid #73c0c7;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  main section.left {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-right: none;
+  }
+}
+main section.left div.picture {
+  margin-top: 30px;
+  text-align: center;
+}
+main section.left div.picture h2,
+main section.left div.picture h3 {
+  color: #444;
+  font-family: "Pretendard-Regular";
+  letter-spacing: 3px;
+}
+main section.left div.picture h2 {
+  letter-spacing: 5px;
+  font-size: 2em;
+  font-weight: 900;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.picture h2 {
+    margin: 0 auto;
+    font-size: 2em;
+  }
+}
+main section.left div.picture h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+main section.left div.picture figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 30px auto;
+}
+main section.left div.picture figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main section.left div.about b.title {
+  display: block;
+  width: 100%;
+  background: #73C0C7;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@font-face {
+  main section.left div.about b.title {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.about b.title {
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background: none;
+    color: #745144;
+    font-family: "Pretendard-Regular";
+  }
+}
+main section.left p {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Pretendard-Regular";
+  color: #666;
+}
+@media screen and (max-width: 1000px) {
+  main section.left p {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+main section.left b.title-sm {
+  font-family: "Pretendard-Regular";
+  color: #253b30;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  main section.left b.title-sm {
+    display: none;
+  }
+}
+main section.left div.contact {
+  margin-top: 10px;
+}
+main section.left div.contact b.title {
+  display: block;
+  width: 100%;
+  background: #73C0C7;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@font-face {
+  main section.left div.contact b.title {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact b.title {
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background: none;
+    color: #745144;
+    font-family: "Pretendard-Regular";
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact b.title {
+    display: none;
+  }
+}
+main section.left div.contact address {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact address {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main section.left div.contact address p {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact address p {
+    flex-direction: column;
+  }
+}
+main section.left div.contact address p b {
+  margin-left: 30px;
+  color: #76ba99;
+  font-size: 1.3em;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact address p b {
+    margin: 5px 0;
+    color: #96735b;
+  }
+}
+main section.left div.contact address p em {
+  margin: 0 auto;
+  font-style: normal;
+  text-align: center;
+  font-family: "Pretendard-Regular";
+  color: #666;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.contact address p em {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.edu {
+    margin-top: 0;
+  }
+}
+main section.left div.edu b.title {
+  display: block;
+  width: 100%;
+  background: #73C0C7;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+@font-face {
+  main section.left div.edu b.title {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.edu b.title {
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background: none;
+    color: #745144;
+    font-family: "Pretendard-Regular";
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.edu b.title {
+    display: none;
+  }
+}
+main section.left div.edu p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+main section.left div.edu p b.b4 {
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #76ba99;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.edu p b.b4 {
+    color: #96735b;
+  }
+}
+main section.left div.edu p em {
+  font-family: "Pretendard-Regular";
+  margin-top: 5px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
+@media screen and (max-width: 1000px) {
+  main section.left div.edu p em {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+main section.left .skills b.title {
+  display: block;
+  width: 100%;
+  background: #73C0C7;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
+}
+@font-face {
+  main section.left .skills b.title {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.left .skills b.title {
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background: none;
+    color: #745144;
+    font-family: "Pretendard-Regular";
+  }
+}
+main section.left .skills div.skill-img {
+  margin-top: 10px;
+}
+main section.left .skills div.skill-img ul {
+  display: flex;
+  width: 90%;
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  main section.left .skills div.skill-img ul {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+main section.left .skills div.skill-img ul li {
+  margin-top: 10px;
+  width: 20%;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  main section.left .skills div.skill-img ul li {
+    width: 15%;
+    max-width: 300px;
+  }
+}
+main section.left .skills div.skill-img ul li img {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 1000px) {
+  main section.left .skills div.skill-img ul li img {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+main section.left .skills div.skill-img ul li i {
+  font-size: 14px;
+}
+main section.left .skills div.skill-img ul li i {
+  display: inline;
+  font-style: normal;
+  color: #666;
+  font-weight: 500;
+}
+main section.right {
+  flex: 1;
+}
+@media screen and (max-width: 1000px) {
+  main section.right {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+main section.right .project b.title {
+  display: block;
+  width: 100%;
+  background: #73C0C7;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+}
+@font-face {
+  main section.right .project b.title {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project b.title {
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    background: none;
+    color: #745144;
+    font-family: "Pretendard-Regular";
+  }
+}
+main section.right .project picture img {
+  max-width: 600px;
+  margin: 20px auto;
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project picture img {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+main section.right .project a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #73c0c7;
+  border: 1px solid #73c0c7;
+  font-weight: 900;
+  text-decoration: none;
+  font-family: "S-CoreDream-3Light";
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  letter-spacing: 5px;
+  transition: all 0.3s;
+}
+main section.right .project a:hover {
+  background: #73c0c7;
+  color: #eee;
+  border: none;
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project a:hover {
+    background: #9e7676;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project a {
+    background: none;
+    border: 1px solid #9e7676;
+    color: #9e7676;
+  }
+}
+main section.right .project h3 {
+  margin: 0 auto;
+}
+main section.right .project .sunshine {
+  width: 100%;
+}
+main section.right .project .sunshine dl {
+  border-top: 1px dotted #76ba99;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project .sunshine dl {
+    max-width: 400px;
+    padding: 10px 5px;
+    border-top: 0;
+  }
+}
+main section.right .project .sunshine dl dt {
+  text-align: center;
+  width: 20%;
+  margin-top: 15px;
+  font-family: "S-CoreDream-3Light";
+  font-weight: 700;
+  font-size: 16px;
+  color: #73c0c7;
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project .sunshine dl dt {
+    margin-left: 10 px;
+    color: #9e7676;
+    width: 20%;
+    font-size: 14px;
+  }
+}
+main section.right .project .sunshine dl dd {
+  font-family: "S-CoreDream-3Light";
+  width: 70%;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #666;
+}
+@media screen and (max-width: 1000px) {
+  main section.right .project .sunshine dl dd {
+    width: 70%;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
