@@ -197,42 +197,28 @@ main section.left div.contact b.title {
     display: none;
   }
 }
-main section.left div.contact p {
+main section.left div.contact address {
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 1000px) {
-  main section.left div.contact p {
+  main section.left div.contact address {
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
   }
 }
-main section.left div.contact p b {
+main section.left div.contact address b {
   color: #76ba99;
-  position: relative;
-  left: 20px;
-  font-size: 1.3em;
-  width: 10%;
-}
-main section.left div.contact p b.b1 {
-  top: 25px;
-}
-main section.left div.contact p b.b2 {
-  top: 25px;
-}
-main section.left div.contact p b.b3 {
-  top: 27px;
 }
 @media screen and (max-width: 1000px) {
-  main section.left div.contact p b {
-    position: static;
-    margin: 2px 0;
+  main section.left div.contact address b {
+    margin: 0px 5px;
     color: #96735b;
   }
 }
-main section.left div.contact p em {
+main section.left div.contact address em {
   margin-bottom: 5px;
   width: 100%;
   font-style: normal;
@@ -241,7 +227,7 @@ main section.left div.contact p em {
   color: #666;
 }
 @media screen and (max-width: 1000px) {
-  main section.left div.contact p em {
+  main section.left div.contact address em {
     width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
