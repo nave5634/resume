@@ -57,7 +57,9 @@ main section.left {
 @media screen and (max-width: 1000px) {
   main section.left {
     display: block;
+    background: none;
     width: 100%;
+    max-width: 600;
     margin: 0 auto;
     border-right: none;
   }
@@ -66,7 +68,8 @@ main section.left div.picture {
   margin-top: 30px;
   text-align: center;
 }
-main section.left div.picture h2, main section.left div.picture h3 {
+main section.left div.picture h2,
+main section.left div.picture h3 {
   color: #444;
   font-family: "Pretendard-Regular";
   letter-spacing: 3px;
@@ -84,7 +87,6 @@ main section.left div.picture h2 {
 }
 main section.left div.picture h3 {
   margin: 10px 0;
-  text-transform: uppercase;
   font-size: 1.5em;
 }
 main section.left div.picture figure {
@@ -209,25 +211,24 @@ main section.left div.contact address {
     align-items: center;
   }
 }
-main section.left div.contact address b {
+main section.left div.contact address p b {
   color: #76ba99;
 }
 @media screen and (max-width: 1000px) {
-  main section.left div.contact address b {
+  main section.left div.contact address p b {
     margin: 0px 5px;
     color: #96735b;
   }
 }
-main section.left div.contact address em {
-  margin-bottom: 5px;
+main section.left div.contact address p em {
   width: 100%;
   font-style: normal;
   text-align: center;
-  font-family: "Pretendard-Regular";
   color: #666;
+  font-family: "Pretendard-Regular";
 }
 @media screen and (max-width: 1000px) {
-  main section.left div.contact address em {
+  main section.left div.contact address p em {
     width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
@@ -279,11 +280,7 @@ main section.left div.edu b.title {
 }
 main section.left div.edu p {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
 }
 main section.left div.edu p b.b4 {
   margin: 0 auto;
@@ -462,7 +459,7 @@ main section.right .project a {
 }
 main section.right .project a:hover {
   background: #73c0c7;
-  color: #EEE;
+  color: #eee;
   border: none;
 }
 @media screen and (max-width: 1000px) {
@@ -503,7 +500,7 @@ main section.right .project .sunshine dl {
 main section.right .project .sunshine dl dt {
   text-align: center;
   width: 20%;
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: "S-CoreDream-3Light";
   font-weight: 700;
   font-size: 16px;
@@ -520,9 +517,9 @@ main section.right .project .sunshine dl dt {
 main section.right .project .sunshine dl dd {
   font-family: "S-CoreDream-3Light";
   width: 70%;
-  margin-top: 15px;
   font-size: 16px;
   color: #666;
+  margin-top: 10px;
 }
 @media screen and (max-width: 1000px) {
   main section.right .project .sunshine dl dd {
